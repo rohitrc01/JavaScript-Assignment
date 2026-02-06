@@ -1,4 +1,4 @@
-// 1: Creating a proxy wrapper that logs property operations
+// 1: Creating a proxy that logs property operations
 function createLoggedInstance(instanceName, target) {
   return new Proxy(target, {
     get(obj, prop) {
