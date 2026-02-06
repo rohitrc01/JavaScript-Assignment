@@ -1,7 +1,3 @@
-// This script downloads multiple files in parallel using asynchronous programming 
-// Waits until all the downloads are completed 
-
-
 import { createWriteStream } from 'node:fs';
 import { basename } from 'node:path';
 import https from 'node:https';
@@ -55,14 +51,5 @@ async function main() {
 }
 
 main().catch(console.error);
-
-
-/*
-Expected output 
-Downloading:
-100MB.bin: 67%
-1GB.bin: 51%
-*/
-
 
 
